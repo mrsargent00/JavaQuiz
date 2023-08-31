@@ -1,37 +1,56 @@
+//questions
 const Questions = [{
 
-    q: "What is capital of India?",
-    a: [{ text: "Gandhinagar", isCorrect: false },
-    { text: "Surat", isCorrect: false },
-    { text: "Delhi", isCorrect: true },
-    { text: "Mumbai", isCorrect: false }
+    q: "Commonly used data types DO not include:",
+    a: [{ text: "strings", isCorrect: false },
+    { text: "booleans", isCorrect: false },
+    { text: "alerts", isCorrect: true },
+    { text: "numbers", isCorrect: false }
     ]
  
 },
 {
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-    { text: "Phuket", isCorrect: false },
-    { text: "Ayutthaya", isCorrect: false },
-    { text: "Bangkok", isCorrect: true }
+    q: "Arrays in JavaScript can be used to store.",
+    a: [{ text: "numbers and strings", isCorrect: false},
+    { text: "other arrays", isCorrect: false },
+    { text: "booleans", isCorrect: false },
+    { text: "all the above", isCorrect: true }
     ]
  
 },
 {
-    q: "What is the capital of Gujarat",
-    a: [{ text: "Surat", isCorrect: false },
-    { text: "Vadodara", isCorrect: false },
-    { text: "Gandhinagar", isCorrect: true },
-    { text: "Rajkot", isCorrect: false }
+    q: "The condition in an if/else statement is enclosed with ___.",
+    a: [{ text: "quotes", isCorrect: true},
+    { text: "curly brackets", isCorrect: false },
+    { text: "parenthesis", isCorrect: false },
+    { text: "square brackets", isCorrect: false }
+    ]
+ 
+},
+{
+    q: "String vaules must be enclosed with ___ when being assigned to variables.",
+    a: [{ text: "commas", isCorrect: false },
+    { text: "curly brackets", isCorrect: false },
+    { text: "quotes", isCorrect: true },
+    { text: "parenthesis", isCorrect: false }
+    ]
+ 
+},
+{
+    q: "A very useful tool used during development and debugging for printing content to the debugger is",
+    a: [{ text: "JavaScript", isCorrect: false },
+    { text: "terminal/bash", isCorrect: false },
+    { text: "for loops", isCorrect: false },
+    { text: "console.log", isCorrect: true }
     ]
  
 }
- 
+
 ]
  
 let currQuestion = 0
 let score = 0
- 
+//loads next question once it is submitted 
 function loadQues() {
     const question = document.getElementById("ques")
     const opt = document.getElementById("opt")
