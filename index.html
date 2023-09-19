@@ -9,29 +9,27 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <header>
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer the following code-related questions with the time limit.</p>
-        <p>Keep in mind that incorrect answers with penalize your score/time by ten seconds!</p>
-    </header>
-   
-    <h2 class="time" style="text-align: right;"></h2>
-    <div id="main"></div>
+    <body>
+       <div class="app">
+        <h1>JavaScript Quiz</h1>
+        <div class="quiz"></div>
+        <h2 id="question">question goes here</h2>
+       </div>
 
-    <div class="panel">
-        <div class="question" id="ques"></div>
-        <div class="options" id="opt"></div>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <button onclick="checkAns()" id="btn">SUBMIT</button>
-        <div id="score"></div>
-        <script src="assets/JS/script.js"></script>
-    </div>
-    <div id="butt">
- <button onclick="window.location.reload();">Try again</button>
-    </div>
+        <div id="answer-buttons">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <div id="timer">Time Remaining: </div> <span id="time">100</span>seconds</div>
+        
+        <button id="next-btn">Next</button>
+        
+    
+
+       
+       <script src="/assets/JS/script.js"></script>
 </body>
 
 </html>
