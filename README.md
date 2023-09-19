@@ -7,8 +7,17 @@ This was suppose to be an interactive quiz with a timer, and a place to store da
 # Assets
 https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/#discuss
 
-I also used a lot of code examples from the MSU-VIRT class to help build it what it is currently. 
+https://stackoverflow.com/questions/65536/how-to-put-text-in-the-upper-right-or-lower-right-corner-of-a-box-using-css
+
+https://www.youtube.com/watch?v=PBcqGxrr9g8&t=121s
+
+https://bootcampspot.instructure.com/courses/4031
+
 
 # Usage.
-<img src="/assets/screenshot/Screenshot of JavaQuiz.png">
-The above photo shows what the quiz currently looks like, the answer has to be clicked, then hit submit, at the end of the quiz, it will tell you how many are incorrect, but wont tell you which question is incorrect. 
+Testing your knowledge on what is known about coding.  
+
+# Contributors:
+
+Micah: https://github.com/G303K 
+
