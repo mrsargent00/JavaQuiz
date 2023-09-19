@@ -1,4 +1,4 @@
-// Array of questions and their answers
+
 const questions = [
     {
       question: "Commonly used data types do NOT include:",
