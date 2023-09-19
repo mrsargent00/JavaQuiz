@@ -1,35 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding Quiz App</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+<body>
 
-    <body>
-       <div class="app">
-        <h1>JavaScript Quiz</h1>
-        <div class="quiz"></div>
-        <h2 id="question">question goes here</h2>
-       </div>
+    <div class="app">
+<h1>JavaScript Quiz</h1>
+<div class="quiz"></div>
+<h2 id="question">Question goes here</h2>
+<div id="answer-buttons">
+  <button class="btn">Answer 1</button>
+  <button class="btn">Answer 2</button>
+  <button class="btn">Answer 3</button>
+  <button class="btn">Answer 4</button>
+</div>
+<div id="timer">Time remaining: <span id="time">100</span> seconds</div>
 
-        <div id="answer-buttons">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-        </div>
-        <div id="timer">Time Remaining: </div> <span id="time">100</span>seconds</div>
-        
-        <button id="next-btn">Next</button>
-        
-    
-
-       
-       <script src="/assets/JS/script.js"></script>
+<button id="next-btn">Next Question</button>
+<div id="scoreboard" style="display: none;">
+  <h2>Scoreboard</h2>
+  <div>
+    <label for="initials">Enter your initials:</label>
+    <input type="text" id="initials" />
+    <button id="submit-score">Submit</button>
+  </div>
+</div>
+<script src="/assets/JS/script.js"></script>
 </body>
-
+<footer>
+  <div id="scores-list"></div>
+</footer>
 </html>

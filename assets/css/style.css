@@ -1,78 +1,103 @@
+/*Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
 }
 
-body{
-    background: #001e4d;
+/* Body Styling */
+body {
+  background-color: white;
 }
 
-.app{
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+/* Application Container Styling */
+.app {
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+/* Application Header Styling */
+.app h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
 }
 
-.app h1{
-    font-size: 25px;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+/* Quiz Section Styling */
+.quiz {
+  padding: 20px 0;
 }
 
-.quiz{
-    padding: 20px, 0;
+.quiz h2 {
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
 }
 
-.quiz h2{
-    font-size: 18px;
-    color: #001e4d;
-    font-weight: 600px;
+/* Buttons Styling */
+.btn {
+  background: rgb(72, 19, 99);
+  color: white;
+  font-weight: 150;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.btn{
-    background: white;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+.btn:hover:not([disabled]) {
+  background: #f338b8; /* Dark background on hover */
+  color: white; /* Light text color on hover */
 }
 
-.btn:hover{
-    background: #222;
-    color: white;
-    
+.btn:disabled {
+  cursor: no-drop; /* No-drop cursor for disabled buttons */
 }
 
-#next-btn{
-background: #001e4d;
-color: white;
-font-weight: 500;
-width: 150px;
-border: 0;
-padding: 10px;
-margin: 20px auto 0;
-border-radius: 4px;
-cursor: pointer;
-display: none;
+/* Next Button Styling */
+#next-btn {
+  background: #4f1581;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 20px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
 }
 
-.correct{
-    background: lightgreen;
+
+/* Scoreboard Styling */
+#scoreboard {
+  max-width: 900px;
+  position: relative; width: 250px;
+  position: absolute; top: 110; left: 175; width: 100px; text-align: center;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.incorrect{
-    background: lightcoral;
+/* Scoreboard Entries Styling */
+#scoreboard p {
+  margin: 15px 0;
+}
+
+#timer{
+    font-size: 40px;
+    position: relative; width: 250px;
+    position: absolute; top: 0; right: 175; width: 100px; text-align: center;
 }
