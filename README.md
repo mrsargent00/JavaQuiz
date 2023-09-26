@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=PBcqGxrr9g8&t=121s
 
 https://bootcampspot.instructure.com/courses/4031
 
-# Deployment
+# Deployment.
 
 Deployed Website: https://mrsargent00.github.io/JavaQuiz/
 
