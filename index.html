@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coding Quiz App</title>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Fundamentals Quiz</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
 
-    <div class="app">
-<h1>JavaScript Quiz</h1>
-<div class="quiz"></div>
-<h2 id="question">Question goes here</h2>
-<div id="answer-buttons">
-  <button class="btn">Answer 1</button>
-  <button class="btn">Answer 2</button>
-  <button class="btn">Answer 3</button>
-  <button class="btn">Answer 4</button>
-</div>
-<div id="timer">Time remaining: <span id="time">100</span> seconds</div>
+    <body>
+        <ul class="top">
+            <li class="top"><button id="view-score">View Existing Scores</button></li> <!-- top left highscore link -->
+            <li class="top"><a id="start-time">Time: 30</a><div id="timer" style="display: none;"></div></li> <!-- top right quiz time -->
+        </ul>
 
-<button id="next-btn">Next Question</button>
-<div id="scoreboard" style="display: none;">
-  <h2>Scoreboard</h2>
-  <div>
-    <label for="initials">Enter your initials:</label>
-    <input type="text" id="initials" />
-    <button id="submit-score">Submit</button>
-  </div>
-</div>
-<script type="text/javascript" src="./assets/JS/script.js"></script>
-</body>
-<footer>
-  <div id="scores-list"></div>
-</footer>
+        <div class="main">
+            <div class="container-left">
+                <div class="container-title">Coding Quiz Challenge</div>
+
+                <div class="problem-card">
+                    <div id="instructions">
+                        <p>Try to answer the following code-related questions within ⏱️30 seconds⏱️.</p>
+                        <p>❌Incorrect answers❌ will penalize your time by 5 seconds!</p> 
+                        <p>Press Start Quiz to show the first question and start the timer.</p>
+                        <h1>Good luck!</h1>
+                    </div>
+
+                    <div id="total-score">Score:</div>      
+                    
+                    <div id="save-score-form"> <!-- container for form to save score -->
+                        <form id="score-form">
+                            <label for="name">Enter your name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <button type="submit" id="submit">Submit</button>
+                        </form>
+                    </div> 
+
+                    <div id="question-container"></div> <!-- container for the question -->
+                    <div id="choices-container"></div> <!-- container for the answer choices -->
+                
+                    <div class="result"> <!-- container for incorrect/correct -->
+                        <div id="accuracy">😶</div> 
+                    </div>
+                    
+                </div>
+
+                <div class="buttons-container"> <!-- container for buttons, prevents any redistribution of page when the buttons are hidden -->
+                    <button class= "button" id="start"></button>
+                    <button class= "button" id="start-over" style="display: none;"></button>
+                </div>
+
+            </div>
+
+            <div class="container-right"> <!-- container for high scores list -->
+                <div class="container-title">High Scores</div>
+                <div class="high-scores-card">
+                    <ol id="high-scores-list"></ol> <!-- high scores are added here via js -->
+                </div>
+                <div class="buttons-container">
+                    <button class= "button" id="reset">Reset Scores</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./assets/JS/script.js"></script>
+    </body>
+
 </html>
